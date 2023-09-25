@@ -72,6 +72,81 @@ body{
     min-height: 90vh;
 }
 
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 80px);
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+
+.cols{
+    width: 50%;
+}
+
+.cols0{
+    width: 80%;
+    z-index: 5;
+}
+
+.topline{
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+
+.topline::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+h1{
+    display: block;
+    font-size: 4em;
+    font-weight: 900;
+    color: #3d535f;
+}
+
+.multiText{
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+}
+
+p{
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 3em;
+    color: black;
+}
+
+.imgbox{
+    position: relative;
+    image-resolution: 300 300px;
+    height: auto;
+    width: calc(95% - 50px);
+    top: -0px;
+    left: 40px;
+}
+
+.imgbox img{
+    position: relative;
+    image-resolution: 300 300px;
+    height: auto;
+    width: calc(95% - 50px);
+    top: -0px;
+    left: 30px;
+    animation: animateUser 4s linear infinite;
+}
+
+
 .box{
     background: var(--primaryColor);
     display: flex;
@@ -158,3 +233,4 @@ body{
     margin-bottom: 10px;
     color: var(--failureCOlor);
 }
+
